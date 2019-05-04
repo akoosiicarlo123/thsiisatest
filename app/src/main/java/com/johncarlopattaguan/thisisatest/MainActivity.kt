@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
             val message = myedittxt.text.toString()
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this, SecondActivity::class.java)
+            val intent = Intent(this, ThirdActivity::class.java)
+            intent.putExtra( "user_message", message)
             startActivity(intent)
 
 
